@@ -1,0 +1,20 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: closet_monster_v2_development
+  port: 3333
+
+test:
+  <<: *default
+  database: closet_monster_v2_test
+  port: 3333
+
+production:
+  <<: *default
+  database: closet_monster_v2_production
+  username: closet_monster_v2
+  password: <%= ENV["CLOSET_MONSTER_V2_DATABASE_PASSWORD"] %>

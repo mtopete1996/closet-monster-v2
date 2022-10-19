@@ -1,0 +1,17 @@
+AllCops:
+  NewCops: enable
+  Exclude:
+    - 'bin/**/*'
+    - 'config/**/*'
+    - 'config/**/*'
+    - 'db/schema.rb'
+    - 'db/migrate/20201122011930_create_active_storage_tables.active_storage.rb'
+    - 'db/migrate/20201122015521_devise_create_users.rb'
+    - 'node_modules/**/*'
+    - 'vendor/**/*'
+
+Layout/LineLength:
+  Max: 110
+
+Style/Documentation:
+  Enabled: false
