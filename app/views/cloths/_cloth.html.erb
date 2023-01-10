@@ -1,5 +1,7 @@
-<div class="cloth col-3">
-  <h3><%= cloth.name %></h3>
-  <p><%= cloth.last_time %></p>
-  <%= link_to 'Edit', edit_cloth_path(id: cloth.id) %>
-</div>
+<%= turbo_frame_tag dom_id(cloth), class: 'col-12 col-md-3 mb-3' do %>
+  <div class="cloth">
+    <h3><%= cloth.name %></h3>
+    <p><%= cloth.last_time %></p>
+    <%= link_to 'Edit', edit_cloth_path(id: cloth.id) %>
+  </div>
+<% end %>
