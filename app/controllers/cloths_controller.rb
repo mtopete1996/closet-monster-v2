@@ -5,6 +5,10 @@ class ClothsController < ApplicationController
     @cloths = cloths
   end
 
+  def new
+    @cloth = Cloth.new
+  end
+
   private
 
   def cloths
