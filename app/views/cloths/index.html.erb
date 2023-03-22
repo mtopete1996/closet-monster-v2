@@ -1,7 +1,7 @@
 <h1>Cloths</h1>
 
 <%= turbo_frame_tag :new_cloth do %>
-  <%= link_to "New cloth +", new_cloth_path, class: 'btn btn-info' %>
+  <%= link_to "New cloth +", new_cloth_path, class: 'btn btn-info mb-3' %>
 <% end %>
 
 <%= render 'cloths', cloths: @cloths %>
