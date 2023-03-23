@@ -2,7 +2,7 @@
 
 class ClothsController < ApplicationController
   def index
-    @cloths = cloths
+    @cloths = cloths.by_name
   end
 
   def new
