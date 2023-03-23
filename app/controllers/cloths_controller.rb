@@ -20,7 +20,7 @@ class ClothsController < ApplicationController
   private
 
   def cloth_params
-    params.require(:cloth).permit(:name)
+    params.require(:cloth).permit(:name, :last_time)
   end
 
   def cloths
