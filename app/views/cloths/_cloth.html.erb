@@ -1,5 +1,13 @@
-<div class="cloth col-3">
-  <h3><%= cloth.name %></h3>
-  <p><%= cloth.last_time %></p>
-  <%= link_to 'Edit', edit_cloth_path(id: cloth.id) %>
+<div class="cloth col-12 col-md-3 mb-3 p-1">
+  <div class="card">
+    <div class="card-body">
+      <div class="h3 card-title"><%= cloth.name %></div>
+
+      <% if cloth.last_time.present? %>
+        <div class="card-text">Last time worn: <b><%= cloth.last_time %></b></div>
+      <% end %>
+
+      <%= link_to 'Edit', edit_cloth_path(id: cloth.id) %>
+    </div>
+  </div>
 </div>
