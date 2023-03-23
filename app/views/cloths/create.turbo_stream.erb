@@ -1,1 +1,2 @@
-<%= turbo_stream.prepend("cloths", @cloth) %>
+<%= turbo_stream.prepend('cloths', @cloth) %>
+<%= turbo_stream.replace('new_cloth', render(partial: 'new_cloth_button')) %>
